@@ -1,3 +1,21 @@
 {
-
+    "name": "laravel-junkies/url-shortener",
+    "description": "The official UX9 URL Shortener API for Laravel Users.",
+    "keywords": ["tobymaxham", "url", "shortener", "ux9"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TobyMaxham",
+            "email": "git2015@maxham.de"
+        }
+    ],
+    "homepage": "http://ux9.de",
+    "support": {
+        "issues": "https://github.com/laravel-junkies/url-shortener/issues",
+        "source": "https://github.com/laravel-junkies/url-shortener"
+    },
+    "require": {
+        "tobymaxham/url-shortener": "1.*"
+    },
+    "minimum-stability": "dev"
 }
