@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "TobyMaxham",
-            "email": "git2015@maxham.de"
+            "email": "git2016@maxham.de"
         }
     ],
     "homepage": "http://ux9.de",
@@ -14,8 +14,12 @@
         "issues": "https://github.com/laravel-junkies/url-shortener/issues",
         "source": "https://github.com/laravel-junkies/url-shortener"
     },
-    "require": {
-        "tobymaxham/url-shortener": "1.*"
+    "autoload": {
+        "psr-4": {
+            "LaraJunkie\\Url\\": "src/"
+        }
     },
-    "minimum-stability": "dev"
+    "require": {
+        "tobymaxham/url-shortener": "^2.0"
+    }
 }
