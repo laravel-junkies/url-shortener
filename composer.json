@@ -20,6 +20,6 @@
         }
     },
     "require": {
-        "tobymaxham/url-shortener": "2.0.*"
+        "tobymaxham/url-shortener": "2.0"
     }
 }
