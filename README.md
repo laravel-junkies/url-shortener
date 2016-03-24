@@ -22,7 +22,7 @@ If you want to install a specific version, update your require block and run `co
 ```json
 {
     "require": {
-        "laravel-junkies/url-shortener": "1.0"
+        "laravel-junkies/url-shortener": "^2.0"
     }
 }
 ```
