@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "TobyMaxham",
-            "email": "git2016@maxham.de"
+            "email": "git2019@maxham.de"
         }
     ],
     "homepage": "http://ux9.de",
@@ -20,6 +20,7 @@
         }
     },
     "require": {
-        "tobymaxham/url-shortener": "2.0"
+        "tobymaxham/url-shortener": "2.*",
+        "illuminate/support": "*"
     }
 }

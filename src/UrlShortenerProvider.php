@@ -2,29 +2,24 @@
 
 namespace LaraJunkie\Url;
 
-use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Support\ServiceProvider;
 use TobyMaxham\Ux9\Shortener;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Foundation\Application;
 
 /**
- * Class UrlShortenerProvider
- * @package LaraJunkie\Url
- * @author Tobias Maxham <git2016@maxham.de>
+ * @author Tobias Maxham <git2019@maxham.de>
  */
 class UrlShortenerProvider extends ServiceProvider
 {
-
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../lj-shortener.php' => config_path('lj-shortener.php'),
+            __DIR__.'/../lj-shortener.php' => config_path('lj-shortener.php'),
         ], 'lj-shortener');
     }
 
     /**
      * Register bindings in the container.
-     *
-     * @return void
      */
     public function register()
     {
@@ -37,11 +32,13 @@ class UrlShortenerProvider extends ServiceProvider
     private function registerUrlShortener($app)
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../lj-shortener.php', 'lj-shortener'
+            __DIR__.'/../lj-shortener.php',
+            'lj-shortener'
         );
 
         $app->singleton('lj.shortener', function () {
             $cfg = config('lj-shortener');
+
             return new Shortener(null, false, $cfg);
         });
         $app->alias('lj.shortener', Shortener::class);

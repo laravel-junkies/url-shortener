@@ -5,9 +5,7 @@ namespace LaraJunkie\Url;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class Shortener
- * @package LaraJunkie\Url
- * @author Tobias Maxham <git2016@maxham.de>
+ * @author Tobias Maxham <git2019@maxham.de>
  */
 class Shortener extends Facade
 {
@@ -20,5 +18,4 @@ class Shortener extends Facade
     {
         return 'lj.shortener';
     }
-
 }
